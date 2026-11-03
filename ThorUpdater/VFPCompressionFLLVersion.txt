@@ -1,0 +1,39 @@
+lparameters toUpdateObject
+
+* Set the properties of the passed updater object.
+
+with toUpdateObject
+	.VersionNumber    = '2026.11.03 - 20261103'
+	.AvailableVersion = 'VFPCompressionFLL-2026.11.03-update-20261103'
+	.Notes            = GetNotes()
+	.RegisterWithThor = GetRegisterWithThor()
+endwith
+return toUpdateObject
+
+* Get the notes for the project.
+
+procedure GetNotes
+local lcNotes
+text to lcNotes noshow
+# VFPCompressionFLL
+
+VFPCompressionFLL is a modern drop-in replacement for vfpcompression.fll.
+
+## Releases
+
+### 2026-11-03
+
+* Initial release.
+
+endtext
+return lcNotes
+
+* Register the tool with Thor. Note: Thor replaces ##InstallFolder## with the
+* installation path for the tool when this code is executed.
+
+procedure GetRegisterWithThor
+local lcCommand
+text to lcCommand noshow
+
+endtext
+return lcCommand

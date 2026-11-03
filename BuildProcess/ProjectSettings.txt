@@ -1,0 +1,6 @@
+AppName    = VFPCompressionFLL
+AppID      = VFPCompressionFLL
+Version    = 2026.11.03
+Component  = Yes
+ChangeLog  = ChangeLog.md
+Repository = https://github.com/VFPX/VFPCompressionFLL
